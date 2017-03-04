@@ -16,3 +16,8 @@ Route::get('/', function () {
 });
 
 Route::get('home/index', 'Home\IndexController@index');
+Route::get('home/faqs', 'Home\IndexController@faqs');
+Route::get('home/contact', 'Home\IndexController@contact');
+Route::get('home/checkout', 'Home\IndexController@checkout');
+Route::get('home/about', 'Home\IndexController@about');
+Route::get('home/products', 'Home\IndexController@products');
