@@ -5,7 +5,9 @@
 <title>爱花 - @yield('title')</title>
 
 @yield('info')
-
+<style>
+    body {font-family: Arial, sans-serif;}
+</style>
 <link href="{{asset('resources/views/home/templatemo_style.css')}}" rel="stylesheet" type="text/css" />
 
 <link rel="stylesheet" href="{{asset('resources/views/home/css/orman.css')}}" type="text/css" media="screen" />

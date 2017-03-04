@@ -3,13 +3,17 @@
 namespace App\Http\Controllers\Home;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\DB;
 
 class IndexController extends Controller
 {
     public function index()
     {
+        $products = DB::table('products')->get();
 
-        return view('home.index');
+        $category = DB::table('category')->get();
+
+        return view('home.index',compact('products', 'category'));
     }
 
     public function faqs()
@@ -40,6 +44,12 @@ class IndexController extends Controller
     {
 
         return view('home.about');
+    }
+
+    public function productdetail()
+    {
+
+        return view('home.productdetail');
     }
 
 

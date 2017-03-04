@@ -11,26 +11,22 @@
 <div id="templatemo_main">
 	<div id="sidebar" class="left">
     	<div class="sidebar_box"><span class="bottom"></span>
-            <h3>Categories</h3>   
-            <div class="content"> 
+            <h3>情景分类</h3>
+            <div class="content">
                 <ul class="sidebar_list">
-                    <li><a href="#">Nulla odio ipsum</a></li>
-                    <li><a href="#">Suspendisse posuere</a></li>
-                    <li><a href="#">Aliquam euismod</a></li>
-                    <li><a href="#">Curabitur ac mauris</a></li>
-                    <li><a href="#">Mauris nulla tortor</a></li>
-                    <li><a href="#">Nullam ultrices</a></li>
-                    <li><a href="#">Vivamus scelerisque</a></li>
-                    <li><a href="#">Suspendisse posuere</a></li>
-                    <li><a href="#">Quisque vel justo</a></li>
+
+                    @foreach($category as $c)
+                    <li><a href="#">{{$c->title}}</a></li>
+                    @endforeach
                 </ul>
             </div>
         </div>
         <div class="sidebar_box"><span class="bottom"></span>
-            <h3>Weekly Special</h3>   
-            <div class="content special"> 
+
+            <h3>本周特价</h3>
+            <div class="content special">
                 <img src="{{asset('resources/views/home/images/templatemo_image_01.jpg')}}" alt="Flowers" />
-                <a href="#">Citrus Burst Bouquet</a>
+                <a href="#">爆菊套餐</a>
                 <p>
                 	Price:
                     <span class="price normal_price">$160</span>&nbsp;&nbsp;
@@ -41,86 +37,23 @@
     </div>
     <div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >Website Template</a></div>
     <div id="content" class="right">
-		<h2>Welcome to Floral Shop</h2>
-		<p>Floral Shop is a free template provided Collect from <a href="http://www.cssmoban.com">网页模板</a>. Sed in suscipit risus, eget consectetur justo. Praesent lacinia, nisi quis commodo consectetur, diam magna laoreet felis, a pulvinar mauris enim in felis. Phasellus in mauris velit. In pellentesque massa in nisl auctor pellentesque. Donec fermentum convallis purus, id luctus nulla tempus in. Aliquam diam nibh, consectetur quis fringilla facilisis, egestas sed odio. Validate <a href="#" ><strong>XHTML</strong></a> &amp; <a href="#" ><strong>CSS</strong></a>.</p>
-        
+		<h2>花点时间 挑选属于你的那一束吧</h2>
+		<p></p>
+        @foreach($products as $p)
         <div class="product_box">
-            <a href="productdetail.html"><img src="{{asset('resources/views/home/images/product/01.jpg')}}" alt="floral set 1" /></a>
-      		<h3>Ut eu feugiat</h3>
-            <p class="product_price">$240</p>
+            <a href="productdetail.html"><img src="{{asset($p->image)}}" alt="{{$p->tags}}" /></a>
+      		<h3>{{$p->name}}</h3>
+            <p class="product_price">${{$p->price}}</p>
             <p class="add_to_cart">
-                <a href="productdetail.html">Detail</a>
-                <a href="shoppingcart.html">Add to Cart</a>
-            </p>
-        </div>        	
-        <div class="product_box">
-            <a href="productdetail.html"><img src="{{asset('resources/views/home/images/product/02.jpg')}}" alt="flowers 2" /></a>
-            <h3>Donec Est Nisi</h3>
-          	<p class="product_price">$160</p>
-            <p class="add_to_cart">
-                <a href="productdetail.html">Detail</a>
-                <a href="shoppingcart.html">Add to Cart</a>
-            </p>
-        </div>        	
-        <div class="product_box">
-            <a href="productdetail.html"><img src="{{asset('resources/views/home/images/product/03.jpg')}}" alt="floral 3" /></a>
-            <h3>Tristique Vitae</h3>
-          <p class="product_price">$140</p>
-            <p class="add_to_cart">
-                <a href="productdetail.html">Detail</a>
-                <a href="shoppingcart.html">Add to Cart</a>
-            </p>
-        </div>      	
-        <div class="product_box no_margin_right">
-            <a href="productdetail.html"><img src="{{asset('resources/views/home/images/product/04.jpg')}}" alt="flowers 4" /></a>
-            <h3>Hendrerit Eu</h3>
-            <p class="product_price">$320</p>
-            <p class="add_to_cart">
-                <a href="productdetail.html">Detail</a>
-                <a href="shoppingcart.html">Add to Cart</a>
+                <a href="{{url('home/productdetail')}}">详细信息</a>
+                <a href="{{url('home/shoppingcart')}}">加入购物车</a>
             </p>
         </div>
-        
-        <div class="product_box">
-            <a href="productdetail.html"><img src="{{asset('resources/views/home/images/product/05.jpg')}}" alt="floral set 5" /></a>
-            <h3>Tincidunt Nisi</h3>
-          	<p class="product_price">$150</p>
-            <p class="add_to_cart">
-                <a href="productdetail.html">Detail</a>
-                <a href="shoppingcart.html">Add to Cart</a>
-            </p>
-        </div>        	
-        <div class="product_box">
-            <a href="productdetail.html"><img src="{{asset('resources/views/home/images/product/07.jpg')}}" alt="flowers 7" /></a>
-            <h3>Curabitur et turpis</h3>
-            <p class="product_price">$110</p>
-            <p class="add_to_cart">
-                <a href="productdetail.html">Detail</a>
-                <a href="shoppingcart.html">Add to Cart</a>
-            </p>
-        </div>        	
-        <div class="product_box">
-            <a href="productdetail.html"><img src="{{asset('resources/views/home/images/product/06.jpg')}}" alt="flower set 6" /></a>
-            <h3>Mauris consectetur</h3>
-            <p class="product_price">$130</p>
-            <p class="add_to_cart">
-                <a href="productdetail.html">Detail</a>
-                <a href="shoppingcart.html">Add to Cart</a>
-            </p>
-        </div>        	
-        <div class="product_box no_margin_right">
-            <a href="productdetail.html"><img src="{{asset('resources/views/home/images/product/08.jpg')}}" alt="floral 8" /></a>
-            <h3>Proin volutpat</h3>
-            <p class="product_price">$170</p>
-            <p class="add_to_cart">
-                <a href="productdetail.html">Detail</a>
-                <a href="shoppingcart.html">Add to Cart</a>
-            </p>
-        </div>
-        
+    	@endforeach
+
         <div class="blank_box">
         	<a href="#"><img src="{{asset('resources/views/home/images/free_shipping.jpg')}}" alt="Free Shipping" /></a>
-        </div>    
+        </div>
     </div>
     <div class="cleaner"></div>
 </div> <!-- END of main -->
