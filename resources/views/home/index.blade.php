@@ -5,15 +5,15 @@
 <title>Floral Shop, Ecommerce, Online Shopping, Web Store</title>
 <meta name="keywords" content="free template, floral shop, ecommerce, online shopping, store" />
 <meta name="description" content="Floral Shop is free website template for ecommerce or online shopping websites. Products, Shopping Cart, FAQs and Checkout pages are included." />
-<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+<link href="{{asset('resources/views/home/templatemo_style.css')}}" rel="stylesheet" type="text/css" />
 
-<link rel="stylesheet" href="css/orman.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="{{asset('resources/views/home/css/orman.css')}}" type="text/css" media="screen" />
+<link rel="stylesheet" href="{{asset('resources/views/home/css/nivo-slider.css')}}" type="text/css" media="screen" />
 
-<link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
+<link rel="stylesheet" type="text/css" href="{{asset('resources/views/home/css/ddsmoothmenu.css')}}" />
 
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/ddsmoothmenu.js">
+<script type="text/javascript" src="{{asset('resources/views/home/js/jquery.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('resources/views/home/js/ddsmoothmenu.js')}}">
 
 /***********************************************
 * Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
@@ -41,16 +41,18 @@ function clearText(field)
 
 </script>
 
-<link rel="stylesheet" href="css/slimbox2.css" type="text/css" media="screen" /> 
-<script type="text/JavaScript" src="js/slimbox2.js"></script> 
+<link rel="stylesheet" href="{{asset('resources/views/home/css/slimbox2.css')}}" type="text/css" media="screen" /> 
+<script type="text/JavaScript" src="{{asset('resources/views/home/js/slimbox2.js')}}"></script> 
 
 
 </head>
 
 <body>
-
+<br/>
+<h1>说鸡不说吧，文明你我他.说鸡又说吧，大家来买花</h1>
 <div id="templatemo_wrapper_h">
 <div id="templatemo_header_wh">
+
 	<div id="templatemo_header" class="header_home">
     	<div id="site_title"><a href="http://www.cssmoban.com/" title="模板之家">模板之家</a></div>
         <div id="templatemo_menu" class="ddsmoothmenu">
@@ -84,20 +86,20 @@ function clearText(field)
         <div class="slider-wrapper theme-orman">
             <div class="ribbon"></div>
             <div id="slider" class="nivoSlider">
-                <img src="images/portfolio/01.jpg" alt="slider image 1" />
+                <img src="{{asset('resources/views/home/images/portfolio/01.jpg')}}" alt="slider image 1" />
                 <a href="http://www.cssmoban.com/" >
-                	<img src="images/portfolio/02.jpg" alt="slider image 2" title="This is an example of a caption" />
+                	<img src="{{asset('resources/views/home/images/portfolio/02.jpg')}}" alt="slider image 2" title="This is an example of a caption" />
                 </a>
-                <img src="images/portfolio/03.jpg" alt="slider image 3" />
-                <img src="images/portfolio/04.jpg" alt="slider image 4" title="#htmlcaption" />
-                <img src="images/portfolio/05.jpg" alt="slider image 5" title="#htmlcaption" />
+                <img src="{{asset('resources/views/home/images/portfolio/03.jpg')}}" alt="slider image 3" />
+                <img src="{{asset('resources/views/home/images/portfolio/04.jpg')}}" alt="slider image 4" title="#htmlcaption" />
+                <img src="{{asset('resources/views/home/images/portfolio/05.jpg')}}" alt="slider image 5" title="#htmlcaption" />
             </div>
             <div id="htmlcaption" class="nivo-html-caption">
                 <strong>Example</strong> caption with <a href="#" >a credit link</a> for <em>this slider</em>.
             </div>
         </div> 
-		<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
-        <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+		<script type="text/javascript" src="{{asset('resources/views/home/js/jquery-1.6.1.min.js')}}"></script>
+        <script type="text/javascript" src="{{asset('resources/views/home/js/jquery.nivo.slider.pack.js')}}"></script>
         <script type="text/javascript">
         $(window).load(function() {
             $('#slider').nivoSlider({
@@ -129,7 +131,7 @@ function clearText(field)
         <div class="sidebar_box"><span class="bottom"></span>
             <h3>Weekly Special</h3>   
             <div class="content special"> 
-                <img src="images/templatemo_image_01.jpg" alt="Flowers" />
+                <img src="{{asset('resources/views/home/images/templatemo_image_01.jpg')}}" alt="Flowers" />
                 <a href="#">Citrus Burst Bouquet</a>
                 <p>
                 	Price:
@@ -145,7 +147,7 @@ function clearText(field)
 		<p>Floral Shop is a free template provided Collect from <a href="http://www.cssmoban.com">网页模板</a>. Sed in suscipit risus, eget consectetur justo. Praesent lacinia, nisi quis commodo consectetur, diam magna laoreet felis, a pulvinar mauris enim in felis. Phasellus in mauris velit. In pellentesque massa in nisl auctor pellentesque. Donec fermentum convallis purus, id luctus nulla tempus in. Aliquam diam nibh, consectetur quis fringilla facilisis, egestas sed odio. Validate <a href="#" ><strong>XHTML</strong></a> &amp; <a href="#" ><strong>CSS</strong></a>.</p>
         
         <div class="product_box">
-            <a href="productdetail.html"><img src="images/product/01.jpg" alt="floral set 1" /></a>
+            <a href="productdetail.html"><img src="{{asset('resources/views/home/images/product/01.jpg')}}" alt="floral set 1" /></a>
       		<h3>Ut eu feugiat</h3>
             <p class="product_price">$240</p>
             <p class="add_to_cart">
@@ -154,7 +156,7 @@ function clearText(field)
             </p>
         </div>        	
         <div class="product_box">
-            <a href="productdetail.html"><img src="images/product/02.jpg" alt="flowers 2" /></a>
+            <a href="productdetail.html"><img src="{{asset('resources/views/home/images/product/02.jpg')}}" alt="flowers 2" /></a>
             <h3>Donec Est Nisi</h3>
           	<p class="product_price">$160</p>
             <p class="add_to_cart">
@@ -163,7 +165,7 @@ function clearText(field)
             </p>
         </div>        	
         <div class="product_box">
-            <a href="productdetail.html"><img src="images/product/03.jpg" alt="floral 3" /></a>
+            <a href="productdetail.html"><img src="{{asset('resources/views/home/images/product/03.jpg')}}" alt="floral 3" /></a>
             <h3>Tristique Vitae</h3>
           <p class="product_price">$140</p>
             <p class="add_to_cart">
@@ -172,7 +174,7 @@ function clearText(field)
             </p>
         </div>      	
         <div class="product_box no_margin_right">
-            <a href="productdetail.html"><img src="images/product/04.jpg" alt="flowers 4" /></a>
+            <a href="productdetail.html"><img src="{{asset('resources/views/home/images/product/04.jpg')}}" alt="flowers 4" /></a>
             <h3>Hendrerit Eu</h3>
             <p class="product_price">$320</p>
             <p class="add_to_cart">
@@ -182,7 +184,7 @@ function clearText(field)
         </div>
         
         <div class="product_box">
-            <a href="productdetail.html"><img src="images/product/05.jpg" alt="floral set 5" /></a>
+            <a href="productdetail.html"><img src="{{asset('resources/views/home/images/product/05.jpg')}}" alt="floral set 5" /></a>
             <h3>Tincidunt Nisi</h3>
           	<p class="product_price">$150</p>
             <p class="add_to_cart">
@@ -191,7 +193,7 @@ function clearText(field)
             </p>
         </div>        	
         <div class="product_box">
-            <a href="productdetail.html"><img src="images/product/07.jpg" alt="flowers 7" /></a>
+            <a href="productdetail.html"><img src="{{asset('resources/views/home/images/product/07.jpg')}}" alt="flowers 7" /></a>
             <h3>Curabitur et turpis</h3>
             <p class="product_price">$110</p>
             <p class="add_to_cart">
@@ -200,7 +202,7 @@ function clearText(field)
             </p>
         </div>        	
         <div class="product_box">
-            <a href="productdetail.html"><img src="images/product/06.jpg" alt="flower set 6" /></a>
+            <a href="productdetail.html"><img src="{{asset('resources/views/home/images/product/06.jpg')}}" alt="flower set 6" /></a>
             <h3>Mauris consectetur</h3>
             <p class="product_price">$130</p>
             <p class="add_to_cart">
@@ -209,7 +211,7 @@ function clearText(field)
             </p>
         </div>        	
         <div class="product_box no_margin_right">
-            <a href="productdetail.html"><img src="images/product/08.jpg" alt="floral 8" /></a>
+            <a href="productdetail.html"><img src="{{asset('resources/views/home/images/product/08.jpg')}}" alt="floral 8" /></a>
             <h3>Proin volutpat</h3>
             <p class="product_price">$170</p>
             <p class="add_to_cart">
@@ -219,7 +221,7 @@ function clearText(field)
         </div>
         
         <div class="blank_box">
-        	<a href="#"><img src="images/free_shipping.jpg" alt="Free Shipping" /></a>
+        	<a href="#"><img src="{{asset('resources/views/home/images/free_shipping.jpg')}}" alt="Free Shipping" /></a>
         </div>    
     </div>
     <div class="cleaner"></div>
@@ -229,9 +231,9 @@ function clearText(field)
 <div id="templatemo_footer_wrapper">
 <div id="templatemo_footer">
 	<div class="footer_left">
-    	<a href="#"><img src="images/1311260370_paypal-straight.png" alt="Paypal" /></a>
-        <a href="#"><img src="images/1311260374_mastercard-straight.png" alt="Master" /></a>
-        <a href="#"><img src="images/1311260374_visa-straight.png" alt="Visa" /></a>
+    	<a href="#"><img src="{{asset('resources/views/home/images/1311260370_paypal-straight.png')}}" alt="Paypal" /></a>
+        <a href="#"><img src="{{asset('resources/views/home/images/1311260374_mastercard-straight.png')}}" alt="Master" /></a>
+        <a href="#"><img src="{{asset('resources/views/home/images/1311260374_visa-straight.png')}}" alt="Visa" /></a>
     </div>
 	<div class="footer_right">
 		<p><a href="index.html">Home</a> | <a href="products.html">Products</a> | <a href="about.html">About</a> | <a href="faqs.html">FAQs</a> | <a href="checkout.html">Checkout</a> | <a href="contact.html">Contact</a></p>
@@ -243,5 +245,5 @@ function clearText(field)
 </div>
 
 </body>
-<script type='text/javascript' src='js/logging.js'></script>
+<script type='text/javascript' src='{{asset('resources/views/home/js/logging.js')}}'></script>
 </html>
