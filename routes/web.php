@@ -26,3 +26,10 @@ Route::get('home/shoppingcart', 'Home\ShopController@shoppingcart');
 
 
 
+
+
+
+Route::get('admin/index', 'Admin\IndexController@index');
+
+
+

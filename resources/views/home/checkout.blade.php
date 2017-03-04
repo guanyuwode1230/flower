@@ -17,27 +17,37 @@
     	<h2>结算</h2>
         
 		<h3>完善个人信息</h3>
-        
-            <div class="content_half left form_field">
-                <br />用户名/(必填)
-                <input name="fullname" type="text" id="fullname" maxlength="40" />
-                <br />地址:
-      			<input name="address" type="text" id="address" maxlength="40" />
-                <br />省份:
-                <input name="city" type="text" id="city" maxlength="40" />
-                <br />城市:
-                <input name="country" type="text" id="country" maxlength="40" />
-            </div>
-            
-            <div class="content_half right form_field">
-                <br />邮箱:
-			    <input name="email" type="text" id="email" maxlength="40" />
-                <br />电话:
-                <input name="phone" type="text" id="phone" maxlength="40" />
-                <br /><span>请保持电话畅通</span>
-            </div>
-            
-            <div class="cleaner h40"></div>
+            <form action="{{url('admin/user')}}" method="post">
+                <div class="content_half left form_field">
+                    <br />用户名/(必填)
+                    <input name="fullname" type="text" id="fullname" maxlength="40" />
+                    <br />邮箱:
+                    <input name="email" type="text" id="email" maxlength="40" />
+                    <br />电话:
+                    <input name="phone" type="text" id="phone" maxlength="40" />
+                    <br /><span>请保持电话畅通</span>
+                </div>
+
+                <div class="content_half right form_field">
+                    <br />地址:
+                    <input name="address" type="text" id="address" maxlength="40" />
+                    <br />省份:
+                    <input name="city" type="text" id="city" maxlength="40" />
+                    <br />城市:
+                    <input name="country" type="text" id="country" maxlength="40" />
+
+
+
+                </div>
+
+                <div class="cleaner h40 content_half">
+
+                    <input type="submit" value="提交信息">
+                    <input type="reset" value="重置信息">
+                </div>
+
+            </form>
+
             
             <h3>订单卡</h3>
             <h4>总计: <strong>$560</strong></h4>
