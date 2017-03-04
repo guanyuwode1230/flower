@@ -5,15 +5,12 @@ namespace App\Http\Controllers\Home;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
 
-class IndexController extends Controller
+class IndexController extends CommonController
 {
     public function index()
     {
-        $products = DB::table('products')->get();
 
-        $category = DB::table('category')->get();
-
-        return view('home.index',compact('products', 'category'));
+        return view('home.index');
     }
 
     public function faqs()

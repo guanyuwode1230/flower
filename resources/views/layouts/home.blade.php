@@ -114,7 +114,34 @@ function clearText(field)
     </div> <!-- END of header -->
 </div> <!-- END of header wrapper -->
 
-@yield('content')
+@section('content')
+<div id="sidebar" class="left">
+    <div class="sidebar_box"><span class="bottom"></span>
+                <h3>情景分类</h3>
+                <div class="content">
+                    <ul class="sidebar_list">
+
+                        @foreach($category as $c)
+                            <li><a href="#">{{$c->title}}</a></li>
+                        @endforeach
+                    </ul>
+                </div>
+            </div>
+        <div class="sidebar_box"><span class="bottom"></span>
+
+            <h3>本周特价</h3>
+            <div class="content special">
+                <img src="{{asset('resources/views/home/images/templatemo_image_01.jpg')}}" alt="Flowers" />
+                <a href="#">爆菊套餐</a>
+                <p>
+                    Price:
+                    <span class="price normal_price">$160</span>&nbsp;&nbsp;
+                    <span class="price special_price">$100</span>
+                </p>
+            </div>
+        </div>
+    </div>
+@show
 
 <div id="templatemo_footer_wrapper">
 <div id="templatemo_footer">
