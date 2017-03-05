@@ -22,19 +22,29 @@
                 <input name="_token" type="hidden" value="{{csrf_token()}}"/>
 
                 <br />用户名/(必填)
-                <input name="username" type="text" id="fullname" maxlength="40" />
+                <input name="name" type="text" id="fullname" maxlength="40" />
                 <br />邮箱:
                 <input name="email" type="text" id="email" maxlength="40" />
                 <br />电话:
-                <input name="telephone" type="text" id="phone" maxlength="40" />
+                <input name="phone" type="text" id="phone" maxlength="40" />
 
                 <span>*请保持电话畅通</span>
                 <br />地址:
                 <input name="address" type="text" id="address" maxlength="40" />
                 <br />省份:
-                <input name="city" type="text" id="city" maxlength="40" />
+                <select name="city_id" id="city">
+                    <option value="1">wewewe</option>
+                    <option value="2">wewewe</option>
+                    <option value="3">wewewe</option>
+                </select>
+                {{--<input name="city" type="text" id="city" maxlength="40" />--}}
                 <br />城市:
-                <input name="country" type="text" id="country" maxlength="40" />
+                <select name="arae_id" id="country">
+                    <option value="1">wewewe</option>
+                    <option value="2">wewewe</option>
+                    <option value="3">wewewe</option>
+                </select>
+                {{--<input name="country" type="text" id="country" maxlength="40" />--}}
                 <input type="submit" value="提交信息">
                 <input type="reset" value="重置信息">
             </form>

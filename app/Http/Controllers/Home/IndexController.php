@@ -25,16 +25,17 @@ class IndexController extends CommonController
         return view('home.faqs');
     }
 
-    public function checkout()
+    public function checkout(Request $request)
     {
-        $input = Input::all();
-//        dd($input);
-        if($input){
-echo 11111;
-            //            $res = User_address::create($input);
-//            if (!$res){
-//                return back()->with('errors','数据填充失败，请稍后重试！');
-//            }
+        if($request->isMethod('post')){
+            $input = $request->except(['_token', 'email']);
+            $res = User_address::create($input);
+
+
+            if (!$res){
+                return back()->with('errors','数据填充失败，请稍后重试！');
+            }
+            return view('home.checkout');
         }else{
             return view('home.checkout');
 
